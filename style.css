@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+  --bebas-neue: "Bebas Neue";
+  --archivo-narrow: "Archivo Narrow";
+  --primary:#101010        ;
+  --secondary: #4CAF50        ;
+  --para-color:#F0F0F0       ;
+  /* --secondary: #ff4500;
+  --primary: #101820;
+  --para-color:white; */
+}
+body {
+  background-color: var(--secondary);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--primary);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+nav {
+  background-color: var(--secondary);
+  position: sticky;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  padding: 10px 20px;
+  color: var(--primary);
+  font-family: var(--bebas-neue);
+  font-size: 2.5rem;
+}
+nav .nav-menu {
+  margin-right: 20px;
+}
+nav .nav-menu a {
+  color: var(--primary);
+  font-family: var(--archivo-narrow);
+  padding: 5px 17px;
+  margin-left: 2rem;
+  transition: 0.3s ease-in-out;
+}
+nav .nav-menu a:hover {
+  border-bottom: 1.5px solid var(--primary);
+  border-top: 1.5px solid var(--primary);
+}
+nav .nav-menu .get-started-btn {
+  border: 2px solid var(--primary);
+  color: var(--secondary);
+  color: var(--primary);
+  font-weight: 800;
+  padding: 10px 15px;
+  transition: 0.2s ease-in-out;
+}
+nav .nav-menu .get-started-btn:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+.hero {
+  height: 89.9vh;
+  margin: 3px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(16, 16, 16, 0.9),
+      rgba(16, 16, 16, 0.9),
+      rgba(16, 16, 16, 0.5)
+    ),
+    url("assets/barbell\ back.jpg");
+  background-size: cover;
+}
+
+.hero .hero-body {
+  display: flex;
+  flex-direction: column;
+  color: var(--para-color);
+  text-align: left;
+}
+.hero .hero-body span {
+  margin-top: 10rem;
+  text-align: center;
+  color: var(--secondary);
+  font-family: var(--bebas-neue);
+  font-size: 12rem;
+}
+.hero .hero-body p {
+  text-align: center;
+  font-family: var(--archivo-narrow);
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: oblique;
+  margin-top: -2rem;
+}
+.hero .hero-body .get-started-btn {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  justify-content: space-around;
+}
+.hero .hero-body .get-started-btn a {
+  color: var(--primary);
+  font-family: var(--archivo-narrow);
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 30px;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  transition: 0.3s ease-in-out;
+}
+.hero .hero-body .get-started-btn a:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 0;
+  transform: scale(1.15);
+}
+.why-join {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px;
+  background-color: var(--primary);
+}
+.why-join-body {
+  margin-left: 10rem;
+  z-index: 100;
+}
+.why-join .why-join-body h1 {
+  color: var(--secondary);
+  font-family: var(--bebas-neue);
+  font-size: 5rem;
+  z-index: 100;
+  margin-top: -1.5rem;
+}
+.why-join span {
+  opacity: 10%;
+  color: var(--para-color);
+  bottom: -18.3rem;
+  left: 6.5rem;
+  position: absolute;
+  font-size: 8rem;
+  font-family: var(--bebas-neue);
+}
+.why-join .why-join-body p {
+  margin-top: 1.5rem;
+  color: var(--para-color);
+  font-family: var(--archivo-narrow);
+  line-height: 1.7rem;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  width: 80%;
+}
+.why-join .img {
+  height: 65vh;
+  width: 200%;
+  margin-right: 10rem;
+  box-shadow: 10px 5px 35px 12px rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-image: linear-gradient(rgba(16, 16, 16, 0.7), rgba(16, 16, 16, 0.3)),
+    url("assets/why-join.jpg");
+  margin-right: 10rem;
+}
+.members-sect {
+  margin: 3px;
+  background-color: var(--primary);
+  height: 125vh;
+  background-color: var(--primary);
+  max-width: 100vw;
+}
+.members-sect h1 {
+  z-index: 100;
+  position: relative;
+  top: 3rem;
+  text-align: center;
+  color: var(--secondary);
+  font-family: var(--bebas-neue);
+  font-size: 5rem;
+}
+.members-sect .head-shadow {
+  opacity: 10%;
+  color: var(--para-color);
+  margin-top: -5.5rem;
+
+  right: 28.7rem;
+
+  position: absolute;
+  font-size: 8rem;
+  font-family: var(--bebas-neue);
+}
+.members-sect .member-cards {
+  margin-top: 7rem;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 1.5rem;
+  column-gap: 0;
+  margin-left: 11rem;
+  margin-right: 7.8rem;
+}
+.members-sect .member-cards .owner {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Owner.jpg");
+  background-size: cover;
+  border: 3px solid var(--primary);
+  height: 40vh;
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-1 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coach-1.jpg");
+  background-size: cover;
+  border: 3px solid var(--primary);
+  height: 40vh;
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coack-2.jpg");
+  background-size: cover;
+  height: 40vh;
+  width: 80%;
+  border: 3px solid var(--primary);
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coack-3.jpg");
+  background-size: cover;
+  height: 40vh;
+  border: 3px solid var(--primary);
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-4 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coach-4.jpg");
+  background-size: cover;
+  border: 3px solid var(--primary);
+  height: 40vh;
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-5 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coach-5.jpg");
+  background-size: cover;
+  border: 3px solid var(--primary);
+  height: 40vh;
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-6 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coach-6.jpg");
+  background-size: cover;
+  border: 3px solid var(--primary);
+  height: 40vh;
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .coach-7 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      rgba(16, 16, 16, 0.3),
+      transparent
+    ),
+    url("assets/Coach-7.jpg");
+  border: 3px solid var(--primary);
+  background-size: cover;
+  height: 40vh;
+  width: 80%;
+  transition: 0.25s ease-in-out;
+}
+.members-sect .member-cards .member:hover {
+  transform: scale(1.05);
+}
+.members-sect .member-cards .member h2 {
+  padding: 0;
+  font-family: var(--bebas-neue);
+  letter-spacing: 3px;
+  color: var(--para-color);
+  margin-top: 15.25rem;
+  font-size: 2.5rem;
+  background-size: cover;
+}
+.class-sect {
+  height: 180vh;
+  background-color: var(--primary);
+  margin: 3px;
+  background-color: var(--primary);
+}
+.class-sect h1 {
+  z-index: 100;
+  position: relative;
+  top: 3rem;
+  text-align: center;
+  color: var(--secondary);
+  font-family: var(--bebas-neue);
+  font-size: 5rem;
+}
+.class-sect .head-shadow {
+  opacity: 10%;
+  color: var(--para-color);
+  margin-top: -5.45rem;
+  right: 24.7rem;
+  position: absolute;
+  font-size: 8rem;
+  font-family: var(--bebas-neue);
+}
+.class-sect .class-data {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  margin-top: 7rem;
+}
+.class-sect .class-data .class-gallery {
+  display: block;
+  align-items: center;
+  text-align: left;
+  height: 50vh;
+}
+.class-sect .class-data .class-img-1 {
+  background-size: cover;
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      transparent
+    ),
+    url("assets/bodybuilding-class.jpg");
+}
+.class-sect .class-data .class-img-2 {
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      transparent
+    ),
+    url("assets/powerlifting-class.jpg");
+  background-size: cover;
+}
+.class-sect .class-data .class-img-3 {
+  background-size: cover;
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      transparent
+    ),
+    url("assets/calisthenics-class.jpg");
+}
+.class-sect .class-data .class-img-4 {
+  background-size: cover;
+  background-image: linear-gradient(
+      to top,
+      rgba(16, 16, 16, 1),
+      rgba(16, 16, 16, 0.5),
+      transparent
+    ),
+    url("assets/corssfit-class.jpg");
+}
+.class-sect .class-data .class-gallery h2 {
+  font-family: var(--bebas-neue);
+  font-size: 3rem;
+  color: var(--secondary);
+  letter-spacing: 3px;
+  margin-top: 14.5rem;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+.class-sect .class-data .class-gallery a {
+  font-family: var(--archivo-narrow);
+  color: var(--primary);
+  background-color: var(--secondary);
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  margin-left: 2rem;
+  margin-top: 9rem;
+  padding: 10px 10px;
+  font-style: oblique;
+  font-weight: 800;
+  border: 1px solid var(--secondary);
+  transition: 0.15s ease-in-out;
+}
+.class-sect .class-data .class-gallery a:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+.class-sect .class-description {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  color: var(--secondary);
+}
+.class-sect .class-description .class-numerals {
+  text-align: center;
+  font-family: var(--bebas-neue);
+  margin-top: 1rem;
+}
+.class-sect .class-description .class-numerals h2 {
+  font-size: 6rem;
+  color: var(--secondary);
+}
+.class-sect .class-description .class-numerals p {
+  color: var(--secondary);
+  font-size: 3rem;
+}
+.membership-section {
+  height: 135vh;
+  margin: 3px;
+  background-color: var(--primary);
+  background-color: var(--primary);
+}
+.membership-section h1 {
+  z-index: 100;
+  position: relative;
+  top: 3rem;
+  text-align: center;
+  color: var(--secondary);
+  font-family: var(--bebas-neue);
+  font-size: 5rem;
+}
+.membership-section .head-shadow {
+  opacity: 10%;
+  color: var(--para-color);
+  margin-top: -5.45rem;
+  right: 30.7rem;
+  position: absolute;
+  font-size: 8rem;
+  font-family: var(--bebas-neue);
+}
+.membership-section .pricings-card {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  align-items: center;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.membership-section .pricings-card img {
+  width: 80%;
+  padding: 10px 10px;
+}
+.membership-section .pricings-card .pricing {
+  background-image: linear-gradient(
+    rgba(158, 158, 158, 1),
+    rgba(158, 158, 158, 1)
+  );
+  font-size: 2rem;
+  width: 30%;
+  height: 83vh;
+  font-family: var(--bebas-neue);
+}
+.membership-section .pricings-card .join-btn a {
+  color: var(--secondary);
+  background-color: var(--primary);
+  font-size: 1.5rem;
+  font-family: var(--archivo-narrow);
+  padding: 10px 20px;
+  transition: 0.15s ease-in-out;
+  font-weight: 800;
+}
+.membership-section .pricings-card .join-btn a:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.membership-section .pricings-card .join-btn {
+  margin-top: 1.2rem;
+}
+.membership-section .pricings-card .all-access-btn {
+  margin-top: 1.05rem;
+}
+.membership-section .pricings-card .all-access {
+  height: 90vh;
+  width: 35%;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+.membership-form {
+  height: 70vh;
+  background-color: var(--secondary);
+}
+.membership-form h1 {
+  z-index: 100;
+  position: relative;
+  top: 3rem;
+  text-align: center;
+  color: var(--primary);
+  font-family: var(--bebas-neue);
+  font-size: 5rem;
+}
+.membership-form .head-shadow {
+  opacity: 25%;
+  color: var(--para-color);
+  margin-top: -5.45rem;
+  right: 22.7rem;
+  position: absolute;
+  font-size: 8rem;
+  font-family: var(--bebas-neue);
+}
+.membership-form .form-content {
+  margin-top: 6rem;
+}
+.membership-form .form-content .body {
+  width: 40%;
+  font-family: var(--archivo-narrow);
+  margin-top: 1.5rem;
+  text-align: justify;
+  color: var(--primary);
+  line-height: 1.7rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: justify;
+}
+.membership-form .form-content {
+  display: flex;
+  justify-content: space-around;
+}
+.membership-form .form-content .form .fill-form {
+  margin-top: 0.7rem;
+}
+.membership-form .form-content .form .fill-form input {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-family: var(--archivo-narrow);
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  width: 30rem;
+}
+.membership-form .form-content .form .submit-btn {
+  margin-top: 1.5rem;
+}
+.membership-form .form-content .form .submit-btn a {
+  background-color: var(--primary);
+  font-family: var(--archivo-narrow);
+  font-size: 1.4rem;
+  color: var(--secondary);
+  padding: 10px 12.32rem;
+  border: 3px solid var(--primary);
+}
+.membership-form .form-content .form .submit-btn a:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+  transform: scale(1.1);
+}
+.social-handles {
+  margin-left: 3px;
+  margin-right: 3px;
+  height: 30vh;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-around;
+  color: var(--para-color);
+  font-size: 1rem;
+  font-family: var(--archivo-narrow);
+  letter-spacing: 1.5px;
+}
+.social-handles .socials {
+  margin-top: 4rem;
+  color: var(--para-color);
+  font-family: var(--archivo-narrow);
+  display: block;
+  justify-content: space-around;
+}
+.social-handles .socials .socials-item i {
+  margin-right: 10px;
+  color: var(--secondary);
+}
+.social-handles .newsletter {
+  margin-top: 3.3rem;
+}
+.social-handles .emails {
+  margin-top: 4rem;
+}
+.social-handles .newsletter h1 {
+  font-size: 2rem;
+  font-family: var(--bebas-neue);
+  color: var(--secondary);
+}
+.social-handles .newsletter .customer-email {
+  margin-top: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0;
+  align-items: center;
+}
+.social-handles .emails a {
+  color: var(--para-color);
+}
+.social-handles .emails a:hover {
+  color: var(--secondary);
+}
+.social-handles .newsletter .customer-email input {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-family: var(--archivo-narrow);
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+}
+.social-handles .newsletter .customer-email a {
+  font-family: var(--archivo-narrow);
+  color: var(--primary);
+  font-size: 1rem;
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  margin: 0;
+  padding: 0.6rem 15px;
+}
+.social-handles .newsletter .customer-email a:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
